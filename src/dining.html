@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinning</title>
-    <link rel="stylesheet" href="./dining.css" />
+    <link rel="stylesheet" href="./newdining.css" />
     <script
       src="https://kit.fontawesome.com/0324f121ff.js"
       crossorigin="anonymous"
@@ -13,37 +13,47 @@
   </head>
   <body>
     <div class="diningcontainer">
-      <header>
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
+      <header class="diningcontainer__header">
+        <section class="diningcontainer__header__logo">
+          <img
+            class="diningcontainer__header__logo__img"
+            src="./photos/LogoMakr-6nEhod.png"
+            alt="Ever Hills Logo"
+          />
         </section>
 
         <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
+          <ul class="navigation__list">
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./index.html"
+                >Home</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <section class="one">
+      <main class="diningcontainer__main">
+        <section class="main__sectionone">
           <img
+            class="sectionone__img"
             src="./photos/pexels-brett-jordan-825661.jpg"
             alt="International Food Pizza"
           />
-          <h1>25 International Foods</h1>
+          <!-- <h1>25 International Foods</h1> -->
         </section>
 
-        <h2 class="fresh">Fresh From Ethiopian Community</h2>
-        <div>
-          <article>
-            <section>
+        <h2 class="main__fresh">Fresh From Ethiopian Community</h2>
+        <div class="main__div">
+          <article class="main__article">
+            <section class="article__section">
               <img
+                class="article__section__img"
                 src="./photos/ScreenshotGenfo.png"
                 alt="Ethiopian Food Genfo"
               />
             </section>
-            <p class="para">
+            <p class="article__para">
               <strong> <span lang="Am">Genfo</span></strong
               ><br />
               <span lang="Am">Genfo, Ga'at,</span>or Marca is a stiff
@@ -54,14 +64,15 @@
             </p>
           </article>
 
-          <article>
-            <section>
+          <article class="main__article">
+            <section class="article__section">
               <img
+                class="article__section__img"
                 src="./photos/ScreenshotDorowot.png"
                 alt="Ethiopian Food Doro Wot"
               />
             </section>
-            <p class="para">
+            <p class="article__para">
               <strong><span lang="Am">Doro Wot</span></strong>
               <br />
               <span lang="Am">Wat, Wot,</span> and Tsebhi are Ethiopian and
@@ -73,14 +84,15 @@
             </p>
           </article>
 
-          <article>
-            <section>
+          <article class="main__article">
+            <section class="article__section">
               <img
+                class="article__section__img"
                 src="./photos/ScreenshotBeyaynetu.png"
                 alt="Ethiopian Food Beyaynetu"
               />
             </section>
-            <p class="para">
+            <p class="article__para">
               <strong><span lang="Am">Beyaynetu</span></strong
               ><br />
               This is Ethiopian's most popular vegetarian dish which translates
@@ -90,14 +102,15 @@
             </p>
           </article>
 
-          <article>
-            <section>
+          <article class="main__article">
+            <section class="article__section">
               <img
+                class="article__section__img"
                 src="./photos/ScreenshotKitfo.png"
                 alt="Ethiopian Food Kitfo"
               />
             </section>
-            <p>
+            <p class="article__para">
               <strong><span lang="Am">Kitfo</span></strong
               ><br />
               <span lang="Am">Kitfo</span> is a typical Ethiopian meal made with
@@ -108,65 +121,28 @@
           </article>
         </div>
 
-        <h2>Explore More</h2>
+        <h2 class="explore">Explore More</h2>
       </main>
 
-      <footer>
-        <div>
-          <section>
+      <footer class="diningcontainer__footer">
+        <section class="footer__sectionone">
+          <section class="sectioncontainer">
+            <h1 class="footer__headingone">How can we help you?</h1>
+            <div class="footer__icons">
+              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </section>
+          <section class="footer__logo">
             <img
-              src="./photos/pexels-andra-918581.jpg"
-              alt="Explore all Foods"
+              class="footer__logo__img"
+              src="./photos/LogoMakr-6nEhod.png"
+              alt="Ever Hills Logo"
             />
-            <h3>All</h3>
           </section>
-
-          <section>
-            <img
-              src="./photos/pexels-julian-jagtenberg-103124.jpg"
-              alt="Breakfast Foods"
-            />
-            <h3>Breakfast</h3>
-          </section>
-
-          <section>
-            <img src="./photos/ScreenshotShiro.png" alt="Lunch Foods" />
-            <h3>Lunch</h3>
-          </section>
-
-          <section>
-            <img src="./photos/pexels-pixabay-262882.jpg" alt="Dinner Foods" />
-            <h3>Dinner</h3>
-          </section>
-
-          <section>
-            <img
-              src="./photos/pexels-photomix-company-96974.jpg"
-              alt="Explore Juices"
-            />
-            <h3>Juice</h3>
-          </section>
-        </div>
-        <h2>Explore Drinks</h2>
-        <section>
-          <img
-            src="./photos/pexels-helena-lopes-696218.jpg"
-            alt="Explore Drinks"
-          />
-        </section>
-        <i class="i fa-sharp fa-solid fa-chevron-left"></i>
-        <i class="i fa-solid fa-chevron-right"></i>
-
-        <h1>How can we help you?</h1>
-
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills logo" />
         </section>
 
         <div class="copyright">

@@ -5,51 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./newindex.css" />
     <script
       src="https://kit.fontawesome.com/0324f121ff.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="anouncementcontainer">
-      <header>
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Hotel logo" />
+    <div class="indexcontainer">
+      <header class="indexcontainer__header">
+        <section class="indexcontainer__header__logo">
+          <img
+            class="indexcontainer__header__logo__img"
+            src="./photos/LogoMakr-6nEhod.png"
+            alt="Hotel logo"
+          />
         </section>
 
-        <nav>
-          <ul>
-            <li><a href="./dining.html">Dining</a></li>
-            <li><a href="./room.html">Room</a></li>
-            <li><a href="./announcement.html">Announcement</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contactus.html">Contact Us</a></li>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./dining.html"
+                >Dining</a
+              >
+            </li>
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./room.html"
+                >Room</a
+              >
+            </li>
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./announcement.html"
+                >Announcement</a
+              >
+            </li>
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./contactus.html"
+                >Contact Us</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <section>
+      <main class="indexcontainer__main">
+        <section class="main__secitonone">
           <img
+            class="sectionone__img"
             src="./photos/pexels-kelly-2869215.jpg"
             alt="Entrance of Ever Hills hotel"
           />
         </section>
-        <button value="left Arrow" type="button" class="left">&lt;</button>
-        <button value="right Arrow" type="button" class="right">&gt;</button>
 
-        <div class="one">
-          <section>
+        <div class="main__divone">
+          <section class="divone__section">
             <img
+              class="section__img"
               src="./photos/pexels-pew-nguyen-244133.jpg"
               alt="Reception of Ever Hills hotel"
             />
           </section>
 
-          <div>
-            <h1>Ever Hills Hotel</h1>
-            <p>
+          <div class="divone__content">
+            <h1 class="content__heading">Ever Hills Hotel</h1>
+            <p class="content__para">
               Ever Hills is located in Bole, just a 20-minute walk from the Bole
               International AirLines. Built in 2022 it has old school charm and
               many rooms still feature high, crown-molded ceilings. A 2012
@@ -62,10 +86,10 @@
           </div>
         </div>
 
-        <div class="two">
-          <div>
-            <h1>Dining Tables</h1>
-            <p>
+        <div class="main__divone">
+          <div class="divone__content">
+            <h1 class="content__heading">Dining Tables</h1>
+            <p class="content__para">
               At Ever Hills, we’re serving up more than 40 types of foods. In
               fact, Ever Hills Famous on local Foods, Shiro is one of our
               unexpected specialties. Reminiscent of butcher shops back in the
@@ -77,46 +101,56 @@
               carved tableside.
             </p>
           </div>
-          <section>
+          <section class="divone__section">
             <img
+              class="section__img"
               src="./photos/pexels-mikhail-nilov-9543891.jpg"
               alt=" two people walking in Dinning Room of Ever Hills Hotel"
             />
           </section>
         </div>
 
-        <div class="one">
-          <section>
+        <div class="main__divone">
+          <section class="divone__section">
             <img
+              class="section__img"
               src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt="Ever Hills Rooms"
             />
           </section>
 
-          <div>
-            <h1>Rooms</h1>
-            <p>
+          <div class="divone__content">
+            <h1 class="content__heading">Rooms</h1>
+            <p class="content__para">
               At Ever Hills, you can have life time comfort with many different
               room for you and your family.
             </p>
           </div>
         </div>
       </main>
-      <footer>
-        <h1>How can we help you?</h1>
-
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-
-        <section>
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills logo" />
+      <footer class="diningcontainer__footer">
+        <section class="footer__sectionone">
+          <section class="sectioncontainer">
+            <h1 class="footer__headingone">How can we help you?</h1>
+            <div class="footer__icons">
+              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </section>
+          <section class="footer__logo">
+            <img
+              class="footer__logo__img"
+              src="./photos/LogoMakr-6nEhod.png"
+              alt="Ever Hills Logo"
+            />
+          </section>
         </section>
 
         <div class="copyright">
-          COPYRIGHT &copy;2022 HOTEL INTERNATIONAL AG ALL RIGHTS RESERVED
+          COPYRIGHT C2022 HOTEL INTERNATIONAL AG ALL RIGHTS RESERVED
         </div>
       </footer>
     </div>

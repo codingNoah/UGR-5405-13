@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rooms</title>
-    <link rel="stylesheet" href="./rooms.css" />
+    <link rel="stylesheet" href="./newrooms.css" />
     <script
       src="https://kit.fontawesome.com/0324f121ff.js"
       crossorigin="anonymous"
@@ -13,32 +13,39 @@
   </head>
   <body>
     <div class="roomcontainer">
-      <header>
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
+      <header class="roomcontainer__header">
+        <section class="roomcontainer__header__logo">
+          <img
+            class="roomcontainer__header__logo__img"
+            src="./photos/LogoMakr-6nEhod.png"
+            alt="Ever Hills Logo"
+          />
         </section>
 
         <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
+          <ul class="navigation__list">
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./index.html"
+                >Home</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
 
-      <h1>Explore Your Comfort</h1>
+      <h1 class="comfort">Explore Your Comfort</h1>
 
-      <main>
-        <section>
+      <main class="roomcontainer__main">
+        <section class="main__sectionone">
           <img
+            class="sectionone__img"
             src="./photos/pexels-pixabay-164595.jpg"
             alt="bed in Ever Hills hotel"
           />
         </section>
-        <button type="button" class="left">&lt;</button>
-        <button type="button" class="right">&gt;</button>
 
-        <article>
-          <table>
+        <article class="main__article">
+          <table class="article__table">
             <thead>
               <tr>
                 <th>Floor</th>
@@ -97,17 +104,25 @@
         </article>
       </main>
 
-      <footer>
-        <h1>How can we help you?</h1>
-
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-
-        <section>
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
+      <footer class="aboutcontainer__footer">
+        <section class="footer__sectionone">
+          <section class="sectioncontainer">
+            <h1 class="footer__headingone">How can we help you?</h1>
+            <div class="footer__icons">
+              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </section>
+          <section class="footer__logo">
+            <img
+              class="footer__logo__img"
+              src="./photos/LogoMakr-6nEhod.png"
+              alt="Ever Hills Logo"
+            />
+          </section>
         </section>
 
         <div class="copyright">

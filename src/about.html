@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- https://images.pexels.com/photos/14036437/pexels-photo-14036437.jpeg?auto=compress&cs=tinysrgb&w=1600 -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./newabout.css" />
     <script
       src="https://kit.fontawesome.com/0324f121ff.js"
       crossorigin="anonymous"
@@ -13,23 +14,23 @@
   </head>
   <body>
     <div class="aboutcontainer">
-      <header>
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills logo" />
+      <header class="aboutcontainer__header">
+        <section class="aboutcontainer__header_logocontainer">
+          <img class="aboutcontainer__header__logocontainer__img" src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills logo" />
         </section>
 
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
+        <nav class="aboutcontainer__header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list__item"><a class="navigation__list__item__link" href="./index.html">Home</a></li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <h1>About Us</h1>
+      <main class="aboutcontainer__main">
+        <h1 class="aboutcontainer__main_headingone">About Us</h1>
 
-        <div>
-          <p>
+        <div class="aboutcontainer__main__divone">
+          <p class="divone_paragraph">
             Ethiopia has much to offer to international tourists. It has a
             unique historical and cultural heritage, magnificent scenery, a
             surprisingly cool climate, rich flora and fauna, important
@@ -47,15 +48,16 @@
             and tourism sector.
           </p>
 
-          <section>
+          <section class="divone_section">
             <img
-              src="https://images.pexels.com/photos/14036437/pexels-photo-14036437.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src="./photos/pexels-helena-lopes-696218.jpg"
               alt="out side view of Ever Hills"
             />
           </section>
         </div>
 
-        <div>
+        <div class="divtwo">
+
           <section>
             <video controls loop autoplay>
               <source
@@ -64,61 +66,83 @@
               />
               <track
                 label="English"
-                kind="subtitles"
+                kind="captions"
                 srclang="en"
                 src="./caption.vtt"
                 default
               />
             </video>
-            <audio controls loop autoplay src="./audio/newedited.mp3"></audio>
+            <transcript>
+            <audio
+              
+              controls
+              loop
+              autoplay
+              src="./audio/newedited.mp3"
+            ></audio>
           </section>
-          <p>
+
+
+          <p class="divtwoparagraph">
             Ever hills was built in 2022 (2015 in the Ethiopian calendar) in the
             middle of the city (Bole), Addis Ababa which is the first hotel in
             Bole. Yenoh Tessma, an Ethiopian Artist and Musician established
             this hotel to provide foreign guests a place to rest and dine. This
             hotel contains 500 rooms divided between two buildings. Standalone
-            concierge staff available at least 16 hours a day.
+            concierge staff available at least 16 hours a day. -->
 
-            <br />
+            
             <br />
             It is well known for:
             <br />
-            <br />
+            
 
             A high staff-to-room ratio—ideally above 2.5.
-            <br />
+            
             <br />
 
             Multilingual staff.
-            <br />
+            
             <br />
 
             24-hour reception, room service, valet parking, butler, doorman.
-            <br />
+            
             <br />
 
             Nightly turndown.
-            <br />
+            
             <br />
 
             Easy communication with hotel staff - even via text or app.
           </p>
+
+
+          
+          
         </div>
       </main>
 
       <footer>
-        <h1>How can we help you?</h1>
+        <div class="footerdivone">
 
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
+          <section class="footerdivonesectionone">
 
-        <section>
-          <img src="./photos/LogoMakr-6nEhod.png" alt="" />
-        </section>
+            <h1>How can we help you?</h1>
+            
+            <section>
+
+              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </section>
+          </section>
+          
+          <section class="bottomlogocontainer">
+            <img  src="./photos/LogoMakr-6nEhod.png" alt="" />
+          </section>
+        </div>
 
         <div class="copyright">
           COPYRIGHT C2022 HOTEL INTERNATIONAL AG ALL RIGHTS RESERVED

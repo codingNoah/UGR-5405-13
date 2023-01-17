@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ContactUs</title>
-    <link rel="stylesheet" href="./contactus.css" />
+    <link rel="stylesheet" href="./newcontactus.css" />
+
     <script
       src="https://kit.fontawesome.com/0324f121ff.js"
       crossorigin="anonymous"
@@ -13,74 +14,107 @@
   </head>
   <body>
     <div class="contactuscontainer">
-      <header>
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
+      <header class="contactuscontainer__header">
+        <section class="contactuscontainer__header__logo">
+          <img
+            class="contactuscontainer__header__logo__img"
+            src="./photos/LogoMakr-6nEhod.png"
+            alt="Ever Hills Logo"
+          />
         </section>
 
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
+        <nav class="contactuscontainer__header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list__item">
+              <a class="navigation__list__item__link" href="./index.html"
+                >Home</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <h1>Get in Touch</h1>
+      <main class="contactuscontanier__main">
+        <h1 class="main__headingone">Get in Touch</h1>
 
-        <address>
+        <address class="main__address">
           <p>Phone: +251905014179**</p>
           <p>Email: tessema...@gmail.com</p>
           <p>Address: Addis Ababa, Ethiopia</p>
         </address>
 
-        <form>
-          <div>
-            <section>
+        <form id="form" class="main__form">
+          <div class="main__form__divone">
+            <section class="form__divone__sectionone">
               <section>
                 <label for="name">Name: </label>
-                <input id="name" type="text" placeholder="Your Name:" />
+                <input
+                  required
+                  class="sectionone__input"
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                />
               </section>
 
               <section>
                 <label for="email">Email: </label>
                 <input
+                  required
+                  class="sectionone__input"
                   id="email"
-                  type="text"
+                  type="email"
                   placeholder="yenohtessema@gmail.com"
                 />
               </section>
 
               <section>
                 <label for="phone">Phone: </label>
-                <input id="phone" type="text" placeholder="Your Phone:" />
+                <input
+                  class="sectionone__input"
+                  id="phone"
+                  type="text"
+                  placeholder="Phone"
+                />
               </section>
             </section>
 
-            <label class="textarea" for="textarea">Your Message: </label>
-            <textarea
-              name="Message"
-              id="textarea"
-              placeholder="Your Message Here:"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <section>
+              <!-- <label class="textarea" for="textarea">Your Message: </label> -->
+              <textarea
+                required
+                name="Message"
+                id="textarea"
+                placeholder="Your Message Here:"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </section>
           </div>
-          <button type="submit">Send Message</button>
+          <button class="form__submitbtn" type="submit">Send Message</button>
         </form>
+        <h3 id="message"></h3>
       </main>
 
-      <footer>
-        <h1>How can we help you?</h1>
-
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-
-        <section>
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
+      <footer class="aboutcontainer__footer">
+        <section class="footer__sectionone">
+          <section class="sectioncontainer">
+            <h1 class="footer__headingone">How can we help you?</h1>
+            <div class="footer__icons">
+              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </section>
+          <section class="footer__logo">
+            <img
+              class="footer__logo__img"
+              src="./photos/LogoMakr-6nEhod.png"
+              alt="Ever Hills Logo"
+            />
+          </section>
         </section>
 
         <div class="copyright">
@@ -88,5 +122,6 @@
         </div>
       </footer>
     </div>
+    <script src="./contact.js"></script>
   </body>
 </html>
