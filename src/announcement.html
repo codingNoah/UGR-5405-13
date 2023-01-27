@@ -4,63 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Announcement</title>
-    <link rel="stylesheet" href="./announcement.css" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://kit.fontawesome.com/0324f121ff.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <div class="announcementcontainer">
-      <header>
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
-        </section>
+  <body
+    class="d-flex flex-column justify-content-between"
+    style="height: 100vh"
+  >
+    <header
+      class="navbar d-flex ps-5 pe-5"
+      style="background: brown; position: fixed; top: 0; width: 100%"
+    >
+      <section style="width: 100px; height: 100px">
+        <img
+          style="width: 100%; height: 100%"
+          class="box"
+          src="./photos/LogoMakr-6nEhod.png"
+          alt="Hotel logo"
+        />
+      </section>
 
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <h1>Announcement</h1>
-        <h2>We are hiring!</h2>
-        <h3>Position: Waitress</h3>
-        <h3>Requirements</h3>
-
-        <ul>
-          <li>Female</li>
-          <li>Good Communication skill</li>
-
-          <li>Work experience(Optional)</li>
-          <li>Minimum 12th grade completion</li>
+      <nav>
+        <ul class="d-flex gap-5" style="list-style: none; font-size: 40px">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
         </ul>
+      </nav>
+    </header>
 
-        <div>Send your application letter and your CV on:</div>
+    <main style="margin-top: 150px">
+      <h1
+        class="d-flex justify-content-center align-items-center"
+        style="font-size: 90px"
+      >
+        Announcement
+      </h1>
+      <section>
+        <h2 class="d-flex justify-content-center" style="font-size: 50px">
+          We are hiring!
+        </h2>
+        <div class="d-flex flex-column mt-5">
+          <h3 style="font-size: 45px">Position: Waitress</h3>
 
-        <i id="email" class="fa-solid fa-envelope"></i>
-      </main>
+          <div style="font-size: 30px">
+            Send your application letter and your CV on:
+            <i
+              style="font-size: 30px"
+              id="email"
+              class="fa-solid fa-envelope"
+            ></i>
+          </div>
+        </div>
+      </section>
+      <h3 style="font-size: 45px" class="mt-5">Requirements</h3>
 
-      <footer>
-        <h1>How can we help you?</h1>
+      <ul
+        class="d-flex flex-column align-items-center"
+        style="font-size: 40px; list-style-type: none"
+      >
+        <li>Female</li>
+        <li>Good Communication skill</li>
 
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-
+        <li>Work experience(Optional)</li>
+        <li>Minimum 12th grade completion</li>
+      </ul>
+    </main>
+    <footer class="mt-5">
+      <section class="d-flex justify-content-between pe-5 ps-5">
+        <section class="d-flex flex-column">
+          <h1>How can we help you?</h1>
+          <div class="d-flex justify-content-center gap-3">
+            <i style="font-size: 30px" class="fa-regular fa-envelope"></i>
+            <i style="font-size: 30px" class="fa-brands fa-instagram"></i>
+            <i style="font-size: 30px" class="fa-solid fa-phone"></i>
+            <i style="font-size: 30px" class="fa-brands fa-facebook"></i>
+            <i style="font-size: 30px" class="fa-brands fa-twitter"></i>
+          </div>
+        </section>
         <section>
           <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
         </section>
+      </section>
 
-        <div class="copyright">
-          COPYRIGHT C2022 HOTEL INTERNATIONAL AG ALL RIGHTS RESERVED
-        </div>
-      </footer>
-    </div>
+      <div
+        class="navbar d-flex justify-content-center align-items-center ps-5 pe-5"
+        style="font-size: 40px"
+      >
+        COPYRIGHT C2022 HOTEL INTERNATIONAL AG ALL RIGHTS RESERVED
+      </div>
+    </footer>
   </body>
 </html>

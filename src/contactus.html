@@ -4,89 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ContactUs</title>
-    <link rel="stylesheet" href="./contactus.css" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://kit.fontawesome.com/0324f121ff.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="./index.js"></script>
   </head>
-  <body>
-    <div class="contactuscontainer">
-      <header>
-        <section class="logo">
-          <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
-        </section>
+  <body
+    style="height: 100vh"
+    class="d-flex flex-column justify-content-between"
+  >
+    <header
+      class="navbar d-flex ps-5 pe-5"
+      style="background: brown; position: fixed; top: 0; width: 100%"
+    >
+      <section style="width: 100px; height: 100px">
+        <img
+          style="width: 100%; height: 100%"
+          class="box"
+          src="./photos/LogoMakr-6nEhod.png"
+          alt="Hotel logo"
+        />
+      </section>
 
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <h1>Get in Touch</h1>
-
-        <address>
-          <p>Phone: +251905014179**</p>
-          <p>Email: tessema...@gmail.com</p>
-          <p>Address: Addis Ababa, Ethiopia</p>
-        </address>
-
-        <form>
-          <div>
-            <section>
-              <section>
-                <label for="name">Name: </label>
-                <input id="name" type="text" placeholder="Your Name:" />
-              </section>
-
-              <section>
-                <label for="email">Email: </label>
-                <input
-                  id="email"
-                  type="text"
-                  placeholder="yenohtessema@gmail.com"
-                />
-              </section>
-
-              <section>
-                <label for="phone">Phone: </label>
-                <input id="phone" type="text" placeholder="Your Phone:" />
-              </section>
+      <nav>
+        <ul class="d-flex gap-5" style="list-style: none; font-size: 40px">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main style="margin-top: 150px">
+      <h1 class="d-flex justify-content-center" style="font-size: 60px">
+        Get in Touch
+      </h1>
+      <address
+        class="d-flex flex-column align-items-center"
+        style="font-size: 30px"
+      >
+        <p>Phone: +251905014179**</p>
+        <p>Email: tessema...@gmail.com</p>
+        <p>Address: Addis Ababa, Ethiopia</p>
+      </address>
+      <form
+        novalidate
+        id="form"
+        class="d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="d-flex gap-3">
+          <section class="d-flex flex-column justify-content-center gap-2">
+            <section class="form-floating">
+              <input
+                required
+                class="pe-5 form-control"
+                id="name"
+                type="text"
+                placeholder="Name"
+              />
+              <label class="form-label" for="name">Name: </label>
             </section>
 
-            <label class="textarea" for="textarea">Your Message: </label>
+            <section class="form-floating">
+              <input
+                class="pe-5 form-control"
+                required
+                class="sectionone__input"
+                id="email"
+                type="email"
+                placeholder="yenohtessema@gmail.com"
+              />
+              <label class="form-label" for="email">Email: </label>
+            </section>
+
+            <section class="form-floating">
+              <input
+                class="pe-5 form-control"
+                class="sectionone__input"
+                id="phone"
+                type="text"
+                placeholder="Phone"
+              />
+              <label class="form-label" for="phone">Phone: </label>
+            </section>
+          </section>
+
+          <section style="background-color: violet" class="form-floating">
             <textarea
+              required
+              id="message"
               name="Message"
-              id="textarea"
+              class="pe-5 form-control"
               placeholder="Your Message Here:"
               cols="30"
               rows="10"
+              style="height: 100%"
             ></textarea>
+            <label for="message" class="form-label">Your message here:</label>
+          </section>
+        </div>
+        <button
+          class="btn btn-dark p-2 mt-5"
+          style="width: 200px; font-size: 20px"
+          type="submit"
+        >
+          Send Message
+        </button>
+      </form>
+     
+        
+      </h3>
+    </main>
+    <footer class="mt-5">
+      <section class="d-flex justify-content-between pe-5 ps-5">
+        <section class="d-flex flex-column">
+          <h1>How can we help you?</h1>
+          <div class="d-flex justify-content-center gap-3">
+            <i style="font-size: 30px" class="fa-regular fa-envelope"></i>
+            <i style="font-size: 30px" class="fa-brands fa-instagram"></i>
+            <i style="font-size: 30px" class="fa-solid fa-phone"></i>
+            <i style="font-size: 30px" class="fa-brands fa-facebook"></i>
+            <i style="font-size: 30px" class="fa-brands fa-twitter"></i>
           </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </main>
-
-      <footer>
-        <h1>How can we help you?</h1>
-
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-
+        </section>
         <section>
           <img src="./photos/LogoMakr-6nEhod.png" alt="Ever Hills Logo" />
         </section>
+      </section>
 
-        <div class="copyright">
-          COPYRIGHT C2022 HOTEL INTERNATIONAL AG ALL RIGHTS RESERVED
-        </div>
-      </footer>
-    </div>
+      <div
+        class="navbar d-flex justify-content-center align-items-center ps-5 pe-5"
+        style="font-size: 40px"
+      >
+        COPYRIGHT C2022 HOTEL INTERNATIONAL AG ALL RIGHTS RESERVED
+      </div>
+    </footer>
   </body>
 </html>
